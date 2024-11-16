@@ -1,0 +1,32 @@
+name: install_pluginpro
+description: A flutter plugin for install apk for android; and using url to go to app store for iOS.
+version: 0.0.1
+homepage: https://github.com/pharidali/install_pluginpro
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+install_pluginpro: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.pharid.installpluginpro
+        pluginClass: InstallPlugin
+      ios:
+        pluginClass: InstallPlugin
